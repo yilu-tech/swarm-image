@@ -41,4 +41,4 @@ RUN set -x \
  && composer config -g repo.packagist composer https://packagist.laravel-china.org \
  && chmod +x /git.sh
 
-CMD ['/startup']
+CMD ["/startup"]
