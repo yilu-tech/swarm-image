@@ -1,0 +1,6 @@
+#!/bin/sh
+
+exec consul-template \
+     -wait 5s:10s \
+     -consul-addr=consul:8500 \
+     -template "/etc/consul-templates/template.ctmpl:/etc/nginx/conf.d/app.conf:nginx -s reload"
